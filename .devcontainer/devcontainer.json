@@ -1,0 +1,11 @@
+{
+  "name": "Flutter Codespace",
+  "image": "ghcr.io/cirruslabs/flutter:stable",
+  "forwardPorts": [8080],
+  "customizations": {
+    "vscode": {
+      "extensions": ["Dart-Code.flutter", "Dart-Code.dart-code"]
+    }
+  },
+  "postCreateCommand": "flutter config --enable-web && flutter precache --web && flutter --version"
+}
